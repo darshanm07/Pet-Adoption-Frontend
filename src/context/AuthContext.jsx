@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import { authAPI } from "../api/authAPI";
 import { toast } from "react-toastify";
-import { getFcmToken } from "../utils/firebase";
+import { getFcmToken } from "../services/notificationService";
 
 export const AuthContext = createContext();
 

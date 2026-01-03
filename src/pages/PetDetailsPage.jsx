@@ -93,7 +93,7 @@ const PetDetailsPage = () => {
             <img
               src={pet.image}
               alt={pet.name}
-              className="w-full h-96 object-cover"
+              className="w-full h-96 object-contain"
             />
           </div>
 
@@ -179,7 +179,7 @@ const PetDetailsPage = () => {
 
             <div className="mb-6">
               <h3 className="text-xl font-bold mb-2">Medical History</h3>
-              <p className="text-gray-700">{pet.medicalHistory}</p>
+              <p className="text-gray-700">{pet.medicalHistory || "No"}</p>
             </div>
 
             {pet.status === "Available" && user && user.role !== "admin" && (
