@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getMessaging } from "firebase/messaging";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCDNnz1U6zjFKyUx-qB66PiWHTF9m-TCsY",
-  authDomain: "pet-adoption-system-f31ac.firebaseapp.com",
-  projectId: "pet-adoption-system-f31ac",
-  storageBucket: "pet-adoption-system-f31ac.firebasestorage.app",
-  messagingSenderId: "310977206188",
-  appId: "1:310977206188:web:8851143b2507bebf698c09",
-  measurementId: "G-48GY3DPFE0",
+  apiKey: import.meta.env.VITE_APP_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
