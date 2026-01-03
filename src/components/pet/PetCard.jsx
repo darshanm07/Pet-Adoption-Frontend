@@ -21,7 +21,7 @@ const PetCard = ({ pet }) => {
         <img
           src={pet.image}
           alt={pet.name}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-contain"
         />
         <span
           className={`absolute top-2 right-2 ${getStatusColor(

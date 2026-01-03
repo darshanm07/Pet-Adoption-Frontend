@@ -24,9 +24,9 @@ const Login = () => {
       const data = await login(formData.email, formData.password);
       navigate(data.user.role === "admin" ? "/admin/dashboard" : "/dashboard");
     } catch (error) {
-      toast.error(
-        error.response?.data?.message || "Login failed. Please try again."
-      );
+      // toast.error(
+      //   error.response?.data?.message || "Login failed. Please try again."
+      // );
       // Error handled in context
     } finally {
       setLoading(false);
